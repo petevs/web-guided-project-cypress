@@ -11,5 +11,6 @@ describe('Quotes App', () => {
   it('sanity checks', () => {
     // assertion(s)
     expect(5).to.equal(5)
+    expect(1 + 2).to.equal(3)
   })
 })
