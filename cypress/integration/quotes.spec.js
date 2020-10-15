@@ -11,6 +11,7 @@ describe('Quotes App', () => {
   const authorInput = () => cy.get('input[name="author"]')
   const submitBtn = () => cy.get('button[id=submitBtn]')
   const cancelBtn = () => cy.get('#cancelBtn')
+  const gagaBtn = () => cy.get('input[name=gaga]')
 
   // use the 'it' keyword for tests
   it('sanity checks', () => {
@@ -26,6 +27,7 @@ describe('Quotes App', () => {
     authorInput().should('exist')
     submitBtn().should('exist')
     cancelBtn().should('exist')
+    gagaBtn().should('not.exist')
   })
 
 })
