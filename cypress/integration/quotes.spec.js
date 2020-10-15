@@ -33,4 +33,8 @@ describe('Quotes App', () => {
     gagaBtn().should('not.exist')
   })
 
+  describe('Filling out inputs and cancelling', () => {
+    
+  })
+
 })
