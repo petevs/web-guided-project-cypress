@@ -7,6 +7,8 @@ describe('Quotes App', () => {
     cy.visit('http://localhost:1234')
   })
 
+  const textInput = () => cy.get('input[name="text"]')
+
   // use the 'it' keyword for tests
   it('sanity checks', () => {
     // assertion(s)
@@ -17,7 +19,7 @@ describe('Quotes App', () => {
   })
 
   it('the proper elements exist', () => {
-    cy.get('input[name="text"]').should('exist')
+    textInput().should('exist')
     cy.get('input[name="gaga"]').should('not.exist')
     cy.get('button[id=submitBtn]').should('exist')
     cy.get('#cancelBtn').should('exist')
