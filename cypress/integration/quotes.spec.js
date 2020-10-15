@@ -63,9 +63,8 @@ describe('Quotes App', () => {
       cancelBtn().click()
       textInput().should('have.value', '')
       authorInput().should('have.value', '')
-      submitBtn().should('be.disabled')
+      submitBtn().should('be.enabled')
     })
-
   })
 
 })
