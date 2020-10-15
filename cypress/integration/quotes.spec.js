@@ -19,6 +19,8 @@ describe('Quotes App', () => {
   it('the proper elements exist', () => {
     cy.get('input[name="text"]').should('exist')
     cy.get('input[name="gaga"]').should('not.exist')
+    cy.get('button[id=submitBtn]').should('exist')
+    cy.get('#cancelBtn').should('exist')
   })
 
 })
