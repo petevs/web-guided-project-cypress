@@ -12,6 +12,6 @@ describe('Quotes App', () => {
     // assertion(s)
     expect(5).to.equal(5)
     expect(1 + 2).to.equal(3)
-    expect({}).to.equal({})
+    expect({}).to.eql({})
   })
 })
