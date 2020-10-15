@@ -17,7 +17,7 @@ describe('Quotes App', () => {
   })
 
   it('the proper elements exist', () => {
-    cy.get('input[name="text"]')
+    cy.get('input[name="text"]').should('exist')
   })
 
 })
