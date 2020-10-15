@@ -55,6 +55,16 @@ describe('Quotes App', () => {
       authorInput().type('bar')
       submitBtn().should('not.be.disabled')
     })
+
+
+    it('the cancel button can reset inputs and disable button', () => {
+      // type
+      // type some more
+      // hit cancel cancelBtn().click()
+      // recheck values of inputs
+      // recheeck submit button
+    })
+
   })
 
 })
