@@ -38,18 +38,22 @@ describe('Quotes App', () => {
       submitBtn().should('be.disabled')
     })
 
-    it('can type inside the text input', () => {
+    it('can type inside the inputs', () => {
       textInput()
         .should('have.value', '')
         .type('Be nice to your CSS specialist!')
         .should('have.value', 'Be nice to your CSS specialist!')
-    })
 
-    it('can type inside the author input', () => {
       authorInput()
         .should('have.value', '')
         .type('Brendan')
         .should('have.value', 'Brendan')
+    })
+
+    it('the submit button enables if we type on boths inputs', () => {
+      // type on input 1
+      // type on input 2
+      // assert submit is enabled
     })
   })
 
