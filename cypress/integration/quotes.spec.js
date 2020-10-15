@@ -3,10 +3,12 @@ describe('Quotes App', () => {
 
   // schedule somethign to happen before each test
   // before each test we navigate to http://localhost:1234
+  // EACH TEST NEEDS FRESH STATE
   beforeEach(() => {
     cy.visit('http://localhost:1234')
   })
 
+  // helpers to avoid tons of repetition
   const textInput = () => cy.get('input[name="text"]')
   const authorInput = () => cy.get('input[name="author"]')
   const submitBtn = () => cy.get('button[id=submitBtn]')
@@ -23,6 +25,7 @@ describe('Quotes App', () => {
   })
 
   it('the proper elements exist', () => {
+    // sanity checking that the elements that should exist are there
     textInput().should('exist')
     authorInput().should('exist')
     submitBtn().should('exist')
