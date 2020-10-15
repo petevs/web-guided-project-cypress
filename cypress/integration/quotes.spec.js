@@ -37,6 +37,11 @@ describe('Quotes App', () => {
     it('submit button is disabled', () => {
       submitBtn().should('be.disabled')
     })
+
+    it('can type inside the inputs', () => {
+      textInput()
+        .should('have.value', '')
+    })
   })
 
 })
