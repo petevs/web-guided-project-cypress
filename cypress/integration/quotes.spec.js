@@ -46,9 +46,11 @@ describe('Quotes App', () => {
     })
 
     it('can type inside the author input', () => {
-
+      authorInput()
+        .should('have.value', '')
+        .type('Brendan')
+        .should('have.value', 'Brendan')
     })
-
   })
 
 })
