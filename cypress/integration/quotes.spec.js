@@ -66,4 +66,12 @@ describe('Quotes App', () => {
     })
   })
 
+
+  describe('Adding a new quote and deleting it', () => {
+    it('can submit and delete', () => {
+      // assert that an elemtn with some text isn't
+      cy.contains(/have fun/i).should('not.exist')
+    })
+  })
+
 })
