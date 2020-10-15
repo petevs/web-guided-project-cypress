@@ -34,7 +34,9 @@ describe('Quotes App', () => {
   })
 
   describe('Filling out inputs and cancelling', () => {
-    
+    it('submit button is disabled', () => {
+      submitBtn().should('not.be.disabled')
+    })
   })
 
 })
