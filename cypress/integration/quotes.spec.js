@@ -51,9 +51,9 @@ describe('Quotes App', () => {
     })
 
     it('the submit button enables if we type on boths inputs', () => {
-      // type on input 1
-      // type on input 2
-      // assert submit is enabled
+      textInput().type('foo')
+      authorInput().type('bar')
+      submitBtn().should('not.be.disabled')
     })
   })
 
