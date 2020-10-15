@@ -25,7 +25,7 @@ export default function Form(props) {
 
   const onChange = evt => {
     // pull these out of the event to avoid the `persist()`
-    const { name, value } = evt.target
+    const { name, value } = evt
     setValues({ ...values, [name]: value })
   }
 
