@@ -56,7 +56,6 @@ describe('Quotes App', () => {
       submitBtn().should('not.be.disabled')
     })
 
-
     it('the cancel button can reset inputs and disable button', () => {
       textInput().type('We are typing')
       authorInput().type('I have typed')
