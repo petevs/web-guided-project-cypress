@@ -38,12 +38,17 @@ describe('Quotes App', () => {
       submitBtn().should('be.disabled')
     })
 
-    it('can type inside the inputs', () => {
+    it('can type inside the text input', () => {
       textInput()
         .should('have.value', '')
         .type('Be nice to your CSS specialist!')
         .should('have.value', 'Be nice to your CSS specialist!')
     })
+
+    it('can type inside the author input', () => {
+
+    })
+
   })
 
 })
