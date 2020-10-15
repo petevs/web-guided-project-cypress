@@ -15,4 +15,9 @@ describe('Quotes App', () => {
     expect({}).to.eql({})
     expect({}).to.not.equal({})
   })
+
+  it('the proper elements exist', () => {
+    cy.get('input[name="gagagagagagagagagaagaggaa"]')
+  })
+
 })
