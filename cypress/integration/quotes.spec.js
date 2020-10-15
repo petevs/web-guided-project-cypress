@@ -10,6 +10,6 @@ describe('Quotes App', () => {
   // use the 'it' keyword for tests
   it('sanity checks', () => {
     // assertion(s)
-    expect(5).to.eql(5)
+    expect(5).to.equal(5)
   })
 })
