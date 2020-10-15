@@ -70,11 +70,11 @@ describe('Quotes App', () => {
   describe('Adding a new quote and deleting it', () => {
     it('can submit and delete', () => {
       // assert that an elemtn with some text isn't
-      cy.contains(/have fun/i).should('not.exist')
+      cy.contains(/have fun/).should('not.exist')
       textInput().type('have fun')
       authorInput().type('gabe')
-      submitBtn()
-      cy.contains(/have fun/i).should('exist')
+      submitBtn().click()
+      cy.contains(/have fun/).should('exist')
     })
   })
 
