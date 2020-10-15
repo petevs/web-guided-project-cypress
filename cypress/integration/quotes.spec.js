@@ -6,4 +6,9 @@ describe('Quotes App', () => {
   beforeEach(() => {
     cy.visit('http://localhost:1234')
   })
+
+  // use the 'it' keyword for tests
+  it('sanity checks', () => {
+
+  })
 })
