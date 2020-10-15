@@ -23,7 +23,7 @@ describe('Quotes App', () => {
 
   it('the proper elements exist', () => {
     textInput().should('exist')
-    authorInput().should('not.exist')
+    authorInput().should('exist')
     submitBtn().should('exist')
     cancelBtn().should('exist')
   })
