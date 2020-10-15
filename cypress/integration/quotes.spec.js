@@ -8,6 +8,9 @@ describe('Quotes App', () => {
   })
 
   const textInput = () => cy.get('input[name="text"]')
+  const authorInput = () => cy.get('input[name="author"]')
+  const submitBtn = () => cy.get('button[id=submitBtn]')
+  const cancelBtn = () => cy.get('#cancelBtn')
 
   // use the 'it' keyword for tests
   it('sanity checks', () => {
@@ -20,9 +23,9 @@ describe('Quotes App', () => {
 
   it('the proper elements exist', () => {
     textInput().should('exist')
-    cy.get('input[name="gaga"]').should('not.exist')
-    cy.get('button[id=submitBtn]').should('exist')
-    cy.get('#cancelBtn').should('exist')
+    authorInput().should('not.exist')
+    submitBtn().should('exist')
+    cancelBtn().should('exist')
   })
 
 })
