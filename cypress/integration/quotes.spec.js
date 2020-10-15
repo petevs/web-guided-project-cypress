@@ -42,6 +42,7 @@ describe('Quotes App', () => {
       textInput()
         .should('have.value', '')
         .type('Be nice to your CSS specialist!')
+        .should('have.value', 'Be nice to your CSS specialist!')
     })
   })
 
