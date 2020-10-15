@@ -41,6 +41,7 @@ describe('Quotes App', () => {
     it('can type inside the inputs', () => {
       textInput()
         .should('have.value', '')
+        .type('Be nice to your CSS specialist!')
     })
   })
 
